@@ -36,5 +36,5 @@ jobs:
         env:
           ECR_REGISTRY: ${{ secrets.ECR_URL }}
         run: |
-          docker tag myapp:latest $ECR_REGISTRY/myapp:latest
-          docker push $ECR_REGISTRY/myapp:latest
+          docker tag myapp:latest $ECR_REGISTRY:latest
+          docker push $ECR_REGISTRY:latest
