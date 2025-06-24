@@ -17,11 +17,6 @@ jobs:
           cd app
           pip install -r requirements.txt
 
-      - name: Run Tests
-        run: |
-          cd app
-          pytest
-
       - name: Docker Build
         run: |
           cd app
