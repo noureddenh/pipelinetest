@@ -6,3 +6,4 @@ created terraform folder
 - created files main.tf with configuration to create infrastructure on aws {vpc, subnet, EC2 instance, route table, Security Group }
 - created the pipe line on github and added the secrets for AWS Account.
 ---
+bump
