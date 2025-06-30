@@ -5,7 +5,7 @@ on:
     branches: [main]
 env:
   AWS_REGION: ap-southeast-1
-  AWS_ROLE_ARN: "arn:aws:iam::000000000000:role/GitHubAction-AssumeRoleWithAction" # need to check the correct role ARN
+  AWS_ROLE_ARN: "arn:aws:iam::591420451219:role/GitHubAction-AssumeRoleWithAction" # need to check the correct role ARN
 jobs:
   build:
     runs-on: ubuntu-latest
