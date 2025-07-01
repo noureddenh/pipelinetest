@@ -38,4 +38,6 @@ jobs:
           ECR_REGISTRY: ${{ secrets.ECR_URL }}
         run: |
           docker tag myapp:latest $ECR_REGISTRY:latest
+          docker tag myapp:latest $ECR_REGISTRY:$GITHUB_SHA
           docker push $ECR_REGISTRY:latest
+          docker push $ECR_REGISTRY:$GITHUB_SHA
